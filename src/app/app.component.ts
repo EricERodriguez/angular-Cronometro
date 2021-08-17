@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'Ejercicio con directiva Output';
+  // name = 'Ejercicio con directiva Output';
+
+  mensaje = '';
+
+  actualizar(t) {
+    this.mensaje = t + '(se actualiza cada 10 segundos)';
+  }
 }
 /**
  * Mostrar en el componente 'CronometroComponent' un
